@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ユーザ一覧</title>
+</head>
+<style>
+
+#blackback{
+color: white;
+background: gray;
+text-align: right
+}
+
+h1{
+font-size: 40px;
+text-align: center
+}
+
+#signup{
+text-align: right
+}
+
+.form{
+text-align: center
+}
+
+input.loginid{
+width: 20%;}
+
+input.loginid2{
+width: 8.5%;}
+
+input.retrieval{
+text-align: right
+}
+
+.retrieval{
+text-align: right}
+
+input.moredetail{ 
+background-color: #4169e1;
+color: #fff;
+border-style: none;
+}
+
+input.update{ 
+color: white;
+background: green;
+border-style: none;}
+
+input.deleate{ 
+color: white;
+background: red;
+border-style: none;}
+
+table th{
+background : silver}
+
+table {
+  border-collapse: collapse; width: 40%; }
+  
+table th, table td {
+  border: solid 1px black;}
+  
+
+  
+
+</style>
+<body>
+<p id = "blackback">ユーザー名 さん　　<a href ="">ログアウト</a></p>
+<h1>ユーザ一覧</h1>
+<p id = "signup"><a href ="">新規登録</a></p>
+<div class = "form">
+ログインID　　 <input type="text" class = loginid name="ログインID" ><br>
+ユーザ名　　　 <input type="text" class = loginid name="パスワード"><br>
+生年月日　　　 <input type="text" class = loginid2 name="生年月日１" > 
+～　　<input type="text" class = loginid2 name="生年月日２" ><br>
+</div>
+<div class = retrieval>
+<input type="submit" value="　　検索　　">
+</div>
+<dr>
+<hr  color="gray" >
+<div class = "table">
+<table align="center">
+  <tr>
+    <th>ログインID</th><th>ユーザ名</th><th>生年月日</th><th></tr>
+  <tr>
+    <td>id0001</td><td>田中太郎</td><td>1989年04月26日</td><td>
+    　<input type="submit" class = moredetail value="　詳細　" > 　
+    	<input type="submit" class = update value="　更新　" >　
+    	<input type="submit" class = deleate value="　削除　" >　
+    </td>
+  </tr>
+  <tr>
+    <td>id0002</td><td>佐藤二朗</td><td>2001年11月12日</td><td>
+    　<input type="submit" class = moredetail value="　詳細　" > 　
+    	<input type="submit" class = update value="　更新　" >　
+    	<input type="submit" class = deleate value="　削除　" >　
+    </td>
+  </tr>
+  <tr>
+    <td>id0003</td><td>佐川真司</td><td>2000年01月01日</td><td>
+    　<input type="submit" class = moredetail value="　詳細　" > 　
+    	<input type="submit" class = update value="　更新　" >　
+    	<input type="submit" class = deleate value="　削除　" >　
+    </td>
+  </tr>
+</table>
+</div>
+</body>
+</html>
+
+
