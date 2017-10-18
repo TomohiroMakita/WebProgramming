@@ -9,8 +9,13 @@
 color: white;
 background: gray;
 text-align: right}
-h{font-size: 30px}
-.center{text-align: center}
+h1{font-size: 30px;
+text-align: center}
+.center{
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .col-1 {
     display: inline-block;
     width: 200px;
@@ -19,13 +24,15 @@ h{font-size: 30px}
     display: inline-block;
     width: 200px;
 }
+.update{text-align: center}
 </style>
 </head>
 <body>
 <p id = "blackback">ユーザー名 さん　　<a href ="">ログアウト</a></p>
+
+<h1>ユーザ情報更新</h1><br><br>
+
 <div class = center>
-<h>ユーザ情報更新</h><br><br>
-</div>
 <div>
 <div>
 <span class="col-1">ログインID</span>
@@ -46,10 +53,13 @@ id0001<br><br>
  <span class="col-2"><input type="text" name="生年月日"></span><br><br>
  </div>
  </div>
-<br>
-<input type="submit" value="　　更新　　">
-<br>
 
+<br>
+<div class = update>
+<input type="submit" value="更新" style="WIDTH: 100px; HEIGHT: 25px">
+</div>
+<br>
+</div>
 
 <p id = "back"><a href ="">戻る</a></p>
 </body>

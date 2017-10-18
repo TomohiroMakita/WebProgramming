@@ -5,17 +5,45 @@
 <meta charset="UTF-8">
 <title>ログイン画面</title>
 <style>
-.center{text-align: center}
-p{font-size: 30px}
+h1{font-size: 30px;
+text-align: center}
+
+.login{
+  width: 410px;
+  margin-left: auto;
+  margin-right: auto;}
+  
+.col-1 {
+    display: inline-block;
+    width: 200px;
+}
+.col-2 {
+    display: inline-block;
+    width: 200px;
+}
+
+.button{text-align: center}
 
 </style>
 </head>
 <body>
-<div class = center>
-<p>ログイン画面</p><br><br>
-ログインID　　 <input type="text" name="ログインID"><br><br>
-パスワード　　 <input type="text" name="パスワード"><br><br><br>
-<input type="submit" value="　　ログイン　　">
+
+<h1>ログイン画面</h1><br><br>
+
+<div class = login>
+<div>
+<div>
+<span class="col-1">ログインID</span>
+<span class="col-2"><input type="text" name="ログインID"></span><br><br>
+</div>
+<div>
+<span class="col-1">パスワード</span>
+<span class="col-2"><input type="text" name="パスワード"></span><br><br><br>
+</div>
+</div>
+</div>
+<div class = button>
+<input type="submit" value="ログイン" style="WIDTH: 100px; HEIGHT: 25px">
 </div>
 </body>
 </html>
