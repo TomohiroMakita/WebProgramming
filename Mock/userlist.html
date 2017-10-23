@@ -6,133 +6,175 @@
 <title>ユーザ一覧</title>
 </head>
 <style>
-
-#blackback{
+body{font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;}
+.blackback{
 color: white;
 background: gray;
-text-align: right
+text-align: right;
+}
+.logout {
+	display: inline;
+	margin:0px 30px
 }
 
 h1{
-font-size: 40px;
+font-size: 30px;
 text-align: center
 }
 
 #signup{
-text-align: right
+position: relative; top: 0; left:67%;
 }
 
-.form{
-  width: 410px;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
-.col-1 {
-    display: inline-block;
-    width: 200px;
-}
-.col-2 {
-    display: inline-block;
-    width: 200px;
+ul li {
+    list-style: none;
+    margin-top: 10px;
 }
 
-input.loginid{
-width: 200px;}
-
-input.loginid2{
-width: 75px;}
-
-input.retrieval{
-text-align: right
+ul li.retrieval {
+    margin-bottom: 100px;
 }
 
-.retrieval{
-text-align: right}
+label {
+    margin-right: 100px;
+    width:100px;
+    float: left;
+}
+
+ul {
+    width: 500px;
+    margin: 0 auto;
+}
+
+input#retrieval {
+	position: relative; top: 0; left:108%;
+	padding: 5px 30px;
+    display: block;
+    -moz-border-radius: 5px;
+ 	-webkit-border-radius: 5px;
+ 	 border-radius: 5px;
+ 	 border: 1px solid #ccc
+}
 
 input.moredetail{ 
-background-color: #4169e1;
-color: #fff;
+background-color: #dcdcdc;
+color: black;
 border-style: none;
+-moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ border: 1px solid #ccc
 }
 
 input.update{ 
-color: white;
-background: #3cb371;
-border-style: none;}
+color: black;
+background: #dcdcdc;
+border-style: none;
+-moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ border: 1px solid #ccc
+ }
 
 input.deleate{ 
-color: white;
-background: #ff6347;
-border-style: none;}
+color: black;
+background: #dcdcdc;
+border-style: none;
+-moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ border: 1px solid #ccc}
 
-table th{
-background : silver}
+.TableData{margin-left:auto;margin-right:auto;}
 
-table {
-  border-collapse: collapse; width: 40%; }
-  
-table th, table td {
-  border: solid 1px black;}
-  
-
-  
-
+table.TableData {
+	border-collapse: collapse;
+	text-align: left;
+	line-height: 1.5;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+table.TableData thead th {
+	width: 150px;
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: top;
+	color: #fff;
+	background: #04162e;
+}
+table.TableData td {
+	width: 250px;
+	padding: 10px;
+	vertical-align: top;
+}
+table.TableData .even {
+	background: #f3f6f7;
+}
 </style>
 <body>
-<p id = "blackback">ユーザー名 さん　　<a href ="">ログアウト</a></p>
+<div class = "blackback">
+<div class="logout">ユーザー名 さん</div>
+<div class="logout"><a href ="">ログアウト</a></div>
+</div>
 <h1>ユーザ一覧</h1>
 <p id = "signup"><a href ="">新規登録</a></p>
-<div class = form>
-<div>
-<div>
-<span class="col-1">ログインID</span> 
-<span class="col-2"><input type="text" class = loginid name="ログインID" ></span><br>
-</div>
- <div>
-<span class="col-1">ユーザ名</span>
-<span class="col-2"><input type="text" class = loginid name="ユーザ名"></span><br>
-</div>
- <div>
-<span class="col-1">生年月日</span>
-<span class="col-2"><input type="text" class = loginid2 name="生年月日１" placeholder="年/月/日">～　
-<input type="text" class = loginid2 name="生年月日２" placeholder="年/月/日"></span><br>
-</div>
-</div>
-</div>
-<div class = retrieval>
-<input type="submit" value="検索" style="WIDTH: 100px; HEIGHT: 25px">
-</div>
+<form>
+    <ul>
+        <li class="loginid">
+            <label for="loginid">ログインID</label>
+            <input id="loginid" type="text" name="loginid" size="41">
+        </li>
+        <li class="name">
+            <label for="name">ユーザ名</label>
+            <input id="name" type="text" name="name" size="41">
+        </li>
+        <li class="birth">
+            <label for="birth">生年月日</label>
+            <input id="birth" type="text" name="birth" placeholder="年/月/日" size="17">～<input id="birth" type="text" name="birth" placeholder="年/月/日" size="17"></textarea>
+        </li>
+        <li><input id="retrieval" type="submit" name="retrieval" value="検索">
+        </li>
+    </ul>
+</form>
 <br>
 <hr  color=#dcdcdc >
 <br>
-<div class = "table">
-<table align="center">
-  <tr>
-    <th>ログインID</th><th>ユーザ名</th><th>生年月日</th><th></tr>
-  <tr>
-    <td>id0001</td><td>田中太郎</td><td>1989年04月26日</td><td>
-    　<input type="submit" class = moredetail value="詳細" style="WIDTH: 60px; HEIGHT: 25px"> 　
+<table class="TableData">
+	<thead>
+	<tr>
+		<th scope="cols">ログインID</th>
+		<th scope="cols">ユーザ名</th>
+		<th scope="cols">生年月日</th>
+		<th scope="cols"></th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>id0001</td>
+		<td>田中太郎</td>
+		<td>1989年04月26日</td>
+		<td><input type="submit" class = moredetail value="詳細" style="WIDTH: 60px; HEIGHT: 25px"> 　
     	<input type="submit" class = update value="更新" style="WIDTH: 60px; HEIGHT: 25px">　
-    	<input type="submit" class = deleate value="削除" style="WIDTH: 60px; HEIGHT: 25px">　
-    </td>
-  </tr>
-  <tr>
-    <td>id0002</td><td>佐藤二朗</td><td>2001年11月12日</td><td>
-    　<input type="submit" class = moredetail value="詳細" style="WIDTH: 60px; HEIGHT: 25px"> 　
+    	<input type="submit" class = deleate value="削除" style="WIDTH: 60px; HEIGHT: 25px">　</td>
+	</tr>
+	<tr>
+		<td class="even">id0002</td>
+		<td class="even">佐藤二朗</td>
+		<td class="even">2001年11月12日</td>
+		<td class="even"><input type="submit" class = moredetail value="詳細" style="WIDTH: 60px; HEIGHT: 25px"> 　
     	<input type="submit" class = update value="更新" style="WIDTH: 60px; HEIGHT: 25px">　
-    	<input type="submit" class = deleate value="削除" style="WIDTH: 60px; HEIGHT: 25px">　
-    </td>
-  </tr>
-  <tr>
-    <td>id0003</td><td>佐川真司</td><td>2000年01月01日</td><td>
-    　<input type="submit" class = moredetail value="詳細" style="WIDTH: 60px; HEIGHT: 25px"> 　
+    	<input type="submit" class = deleate value="削除" style="WIDTH: 60px; HEIGHT: 25px"></td>
+	</tr>
+	<tr>
+		<td>id0003</td>
+		<td>佐川真司</td>
+		<td>2000年01月01日</td>
+		<td><input type="submit" class = moredetail value="詳細" style="WIDTH: 60px; HEIGHT: 25px"> 　
     	<input type="submit" class = update value="更新" style="WIDTH: 60px; HEIGHT: 25px">　
-    	<input type="submit" class = deleate value="削除" style="WIDTH: 60px; HEIGHT: 25px">　
-    </td>
-  </tr>
+    	<input type="submit" class = deleate value="削除" style="WIDTH: 60px; HEIGHT: 25px"></td>
+	</tr>
+	</tbody>
 </table>
-</div>
 </body>
 </html>
 

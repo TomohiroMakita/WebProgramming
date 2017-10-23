@@ -1,66 +1,97 @@
-
 <!DOCTYPE html>
 <html lang = "ja">
 <head>
 <meta charset="UTF-8">
 <title>ユーザ情報更新</title>
 <style>
-#blackback{
+body{font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;}
+.blackback{
 color: white;
 background: gray;
-text-align: right}
-h1{font-size: 30px;
-text-align: center}
-.center{
-  width: 450px;
-  margin-left: auto;
-  margin-right: auto;
+text-align: right;
 }
-.col-1 {
-    display: inline-block;
-    width: 200px;
+.logout {
+	display: inline;
+	margin:0px 30px
 }
-.col-2 {
-    display: inline-block;
-    width: 200px;
+
+h1{font-size: 30px}
+
+.center{text-align: center}
+
+.signin{margin-left:auto;margin-right:auto;}
+
+table.signin{
+	border-collapse: collapse;
+	text-align: left;
+	line-height: 1.5;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-left: 15px solid #ccc;
 }
-.update{text-align: center}
+
+table.signin td {
+	width: 250px;
+	padding: 10px;
+	vertical-align: top;
+}
+table.signin .even {
+	background: #f3f6f7;
+}
+input#touroku{
+	 margin:0 auto;
+	padding: 5px 30px;
+	font-weight: bold;
+    display: block;
+    -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ border: 1px solid #ccc}
+    
+#back{text-align:center}
+
+
 </style>
 </head>
 <body>
-<p id = "blackback">ユーザー名 さん　　<a href ="">ログアウト</a></p>
-
-<h1>ユーザ情報更新</h1><br><br>
-
+<div class = "blackback">
+<div class="logout">ユーザー名 さん</div>
+<div class="logout"><a href ="">ログアウト</a></div>
+</div>
 <div class = center>
-<div>
-<div>
-<span class="col-1">ログインID</span>
-id0001<br><br>
-<span class="col-1">パスワード</span>
- <span class="col-2"><input type="text" name="パスワード"></span><br><br>
- </div>
- <div>
-<span class="col-1">パスワード(確認)</span>
- <span class="col-2"><input type="text" name="パスワード(確認)"></span><br><br>
- </div>
- <div>
-<span class="col-1">ユーザ名</span>
- <span class="col-2"><input type="text" name="ユーザ名"></span><br><br>
- </div>
- <div>
-<span class="col-1">生年月日</span>
- <span class="col-2"><input type="text" name="生年月日"></span><br><br>
- </div>
- </div>
+<h1>ユーザ情報更新</h1><br><br>
+</div>
+<table class="signin">
+	
+	<tbody>
+	<tr>
+		<td>ログインID</td>
+		<td>id0001</td>
+	</tr>
+	<tr>
+		<td class="even">パスワード</td>
+		<td class="even"><input type="text" name="パスワード"></td>
+	</tr>
+	<tr>
+		<td>パスワード(確認)</td>
+		<td><input type="text" name="パスワード(確認)"></td>
+	</tr>
+	<tr>
+		<td class="even">ユーザ名</td>
+		<td class="even"><input type="text" name="ユーザ名"></td>
+	</tr>
+	<tr>
+		<td>生年月日</td>
+		<td><input type="text" name="生年月日"></td>
+	</tr>
+	</tbody>
+</table>
 
 <br>
-<div class = update>
-<input type="submit" value="更新" style="WIDTH: 100px; HEIGHT: 25px">
-</div>
+<input id="touroku" type="submit" name ="touroku" value="更新">
 <br>
-</div>
-
 <p id = "back"><a href ="">戻る</a></p>
 </body>
 </html>
+

@@ -5,8 +5,19 @@
 <meta charset="UTF-8">
 <title>ログイン画面</title>
 <style>
+body{font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;}
 h1{font-size: 30px;
 text-align: center}
+
+.login-container{
+	background:#f5f5f5;
+    position: relative;
+    width: 500px;
+    margin: 80px auto;
+    padding: 20px 40px 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
 
 .login{
   width: 410px;
@@ -20,30 +31,49 @@ text-align: center}
 .col-2 {
     display: inline-block;
     width: 200px;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	 border-radius: 3px;
 }
 
-.button{text-align: center}
+button.button1{
+ padding: 7px 30px;
+font-weight: bold;
+ border-style: none;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+
+
+}
+
+.loginbutton{text-align: center}
+
+label {
+    margin-right: 10px;
+}
 
 </style>
 </head>
 <body>
+<div class = "login-container">
+<h1>ログイン</h1><br><br>
 
-<h1>ログイン画面</h1><br><br>
-
-<div class = login>
-<div>
-<div>
-<span class="col-1">ログインID</span>
-<span class="col-2"><input type="text" name="ログインID"></span><br><br>
+	<div class = login>
+		<div>
+			<div>
+				<span class="col-1">ログインID</span>
+				<span class="col-2"><input type="text" name="ログインID"></span><br><br>
+			</div>
+			<div>
+				<span class="col-1">パスワード</span>
+				<span class="col-2"><input type="text" name="パスワード"></span><br><br><br>
+			</div>
+		</div>
+	</div>
+<div class = "loginbutton">
+<button class="button1" type="submit">ログイン</button>
 </div>
-<div>
-<span class="col-1">パスワード</span>
-<span class="col-2"><input type="text" name="パスワード"></span><br><br><br>
-</div>
-</div>
-</div>
-<div class = button>
-<input type="submit" value="ログイン" style="WIDTH: 100px; HEIGHT: 25px">
 </div>
 </body>
 </html>

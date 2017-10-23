@@ -5,71 +5,83 @@
 <meta charset="UTF-8">
 <title>ユーザ情報詳細参照</title>
 <style>
-
-#blackback{
+body{font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;}
+.blackback{
 color: white;
 background: gray;
-text-align: right
+text-align: right;
+}
+.logout {
+	display: inline;
+	margin:0px 30px
 }
 
 h1{text-align: center}
 
 .moredetail{
-  width: 410px;
+
   margin-left: auto;
   margin-right: auto;}
 
 h1{font-size: 30px}
 
-span {
-display: inline-block;
-width: 7em;
+table.moredetail{
+	border-collapse: collapse;
+	text-align: left;
+	line-height: 1.5;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-left: 15px solid #ccc;
 }
 
-.col-1 {
-    display: inline-block;
-    width: 200px;
+table.moredetail td {
+	width: 250px;
+	padding: 10px;
+	vertical-align: top;
 }
-.col-2 {
-    display: inline-block;
-    width: 200px;
+table.moredetail .even {
+	background: #f3f6f7;
 }
 
+#back{text-align:center}
 
 </style>
 </head>
 <body>
 
-<p id = "blackback">ユーザー名 さん　　<a href ="">ログアウト</a></p>
-
+<div class = "blackback">
+<div class="logout">ユーザー名 さん</div>
+<div class="logout"><a href ="">ログアウト</a></div>
+</div>
 
 <h1>ユーザ情報詳細参照</h1><br><br>
 
-<div class = moredetail>
-<div>
-<div>
- <span class="col-1">ログインID</span>
- <span class="col-2">id0001</span><br><br>
- </div>
- <div>
- <span class="col-1">ユーザ名</span>
- <span class="col-2">田中太郎</span><br><br>
- </div>
- <div>
- <span class="col-1">生年月日</span>
- <span class="col-2">1989年04月26日</span><br><br>
- </div>
- <div>
- <span class="col-1">登録日時</span>
- <span class="col-2">2017年01月01日 10:50</span><br><br>
- </div>
- <div>
- <span class="col-1">更新日時</span></span>
- <span class="col-2">2017年02月01日 01:05</span><br><br>
-</div>
-</div>
-</div>
-
+<table class="moredetail">
+	
+	<tbody>
+	<tr>
+		<td>ログインID</td>
+		<td>id0001</td>
+	</tr>
+	<tr>
+		<td class="even">ユーザ名</td>
+		<td class="even">田中太郎</td>
+	</tr>
+	<tr>
+		<td>生年月日</td>
+		<td>1989年04月26日</td>
+	</tr>
+	<tr>
+		<td class="even">登録日時</td>
+		<td class="even">2017年01月01日 10:50</td>
+	</tr>
+	<tr>
+		<td>更新日時</td>
+		<td>2017年02月01日 01:05</td>
+	</tr>
+	</tbody>
+</table>
 <p id = "back"><a href ="">戻る</a></p>
 
 </body>

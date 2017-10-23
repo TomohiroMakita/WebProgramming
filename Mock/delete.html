@@ -5,21 +5,54 @@
 <meta charset="UTF-8">
 <title>ユーザ削除確認</title>
 <style>
-#blackback{
+body{font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;}
+.blackback{
 color: white;
 background: gray;
-text-align: right}
+text-align: right;
+}
+.logout {
+	display: inline;
+	margin:0px 30px
+}
 h1{font-size: 30px;
 text-align: center}
+
+.delete-container{
+position: relative;
+    width: 500px;
+    margin: 0px auto;
+    padding: 20px 40px 40px;
+    text-align: center;
+    border: 1px solid #ccc;}
+
 #c1 { text-align: center; } 
 #c2 { text-align: left; margin-left: auto; margin-right: auto; width: 300px; }
 ul {list-style-type: none;}
-.bottun{text-align: center}
+div.deletebutton {
+text-align:center;
+
+}
+div.deletebutton input {
+margin: 0px 20px;
+padding: 5px 20px;
+	font-weight: bold;
+    display: inline;
+    -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ border: 1px solid #ccc
+}
+
 </style>
 </head>
 <body>
-<p id = "blackback">ユーザー名 さん　　<a href ="">ログアウト</a></p>
+<div class = "blackback">
+<div class="logout">ユーザー名 さん</div>
+<div class="logout"><a href ="">ログアウト</a></div>
+</div>
 <h1>ユーザ削除確認</h1><br><br>
+<div class = "delete-container">
 <div id="c1">
 <ul id="c2">
 <li>ログインID:id0001
@@ -27,9 +60,10 @@ ul {list-style-type: none;}
 </ul>
 </div>
 <br><br>
-<div class = bottun>
-<input type="submit" value="キャンセル" style="WIDTH: 100px; HEIGHT: 25px">　　
-<input type="submit" value="OK" style="WIDTH: 100px; HEIGHT: 25px">
+<div class = "deletebutton">
+<input type="submit" value="キャンセル">
+<input type="submit" value="　　OK　　">
+</div>
 </div>
 </body>
 </html>
