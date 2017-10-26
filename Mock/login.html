@@ -7,7 +7,8 @@
 <style>
 body{font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;}
 h1{font-size: 30px;
-text-align: center}
+text-align: center;
+margin-bottom:-10px;}
 
 .login-container{
 	background:#f5f5f5;
@@ -36,7 +37,8 @@ text-align: center}
 	 border-radius: 3px;
 }
 
-button.button1{
+input.loginbutton{
+text-align: center;
  padding: 7px 30px;
 font-weight: bold;
  border-style: none;
@@ -47,7 +49,7 @@ font-weight: bold;
 
 }
 
-.loginbutton{text-align: center}
+
 
 label {
     margin-right: 10px;
@@ -67,13 +69,13 @@ label {
 			</div>
 			<div>
 				<span class="col-1">パスワード</span>
-				<span class="col-2"><input type="text" name="パスワード"></span><br><br><br>
+				<span class="col-2"><input type="password" name="パスワード"></span><br><br><br>
 			</div>
 		</div>
 	</div>
-<div class = "loginbutton">
-<button class="button1" type="submit">ログイン</button>
-</div>
+
+<input type="button" class ="loginbutton" onclick="location.href='file:///C:/Users/tomohiro/Documents/github/WebProgramming/Mock/userlist.html'" value="ログイン">
+
 </div>
 </body>
 </html>

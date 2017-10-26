@@ -6,6 +6,11 @@
 <style>
 body{font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;}
 .blackback{
+position: fixed;
+top: 0;
+left: 0;
+margin: 0;
+width: 100%;
 color: white;
 background: gray;
 text-align: right;
@@ -15,7 +20,9 @@ text-align: right;
 	margin:0px 30px
 }
 
-h1{font-size: 30px}
+h1{font-size: 30px;
+padding-top: 30px;
+margin-bottom:-20px;}
 
 .center{text-align: center}
 
@@ -57,7 +64,7 @@ input#touroku{
 <body>
 <div class = "blackback">
 <div class="logout">ユーザー名 さん</div>
-<div class="logout"><a href ="">ログアウト</a></div>
+<div class="logout"><a href ="file:///C:/Users/tomohiro/Documents/github/WebProgramming/Mock/login.html">ログアウト</a></div>
 </div>
 <div class = center>
 <h1>ユーザ情報更新</h1><br><br>
@@ -71,11 +78,11 @@ input#touroku{
 	</tr>
 	<tr>
 		<td class="even">パスワード</td>
-		<td class="even"><input type="text" name="パスワード"></td>
+		<td class="even"><input type="password" name="パスワード"></td>
 	</tr>
 	<tr>
 		<td>パスワード(確認)</td>
-		<td><input type="text" name="パスワード(確認)"></td>
+		<td><input type="password" name="パスワード(確認)"></td>
 	</tr>
 	<tr>
 		<td class="even">ユーザ名</td>
@@ -83,15 +90,15 @@ input#touroku{
 	</tr>
 	<tr>
 		<td>生年月日</td>
-		<td><input type="text" name="生年月日"></td>
+		<td><input type="date" name="生年月日"></td>
 	</tr>
 	</tbody>
 </table>
 
 <br>
-<input id="touroku" type="submit" name ="touroku" value="更新">
+<input id="touroku" type="button" name ="touroku" onclick="location.href='file:///C:/Users/tomohiro/Documents/github/WebProgramming/Mock/userlist.html'"value="更新">
 <br>
-<p id = "back"><a href ="">戻る</a></p>
+<p id = "back"><a href ="file:///C:/Users/tomohiro/Documents/github/WebProgramming/Mock/userlist.html">戻る</a></p>
 </body>
 </html>
 

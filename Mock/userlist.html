@@ -8,6 +8,11 @@
 <style>
 body{font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;}
 .blackback{
+position: fixed;
+top: 0;
+left: 0;
+margin: 0;
+width: 100%;
 color: white;
 background: gray;
 text-align: right;
@@ -19,11 +24,17 @@ text-align: right;
 
 h1{
 font-size: 30px;
-text-align: center
+text-align: center;
+padding-top: 30px;
+margin-bottom:-20px;
+
 }
 
 #signup{
-position: relative; top: 0; left:67%;
+text-align: center;
+margin-top:20pt;
+margin-bottom:10pt;
+coler:#f5f5f5
 }
 
 ul li {
@@ -47,7 +58,8 @@ ul {
 }
 
 input#retrieval {
-	position: relative; top: 0; left:108%;
+	margin-left: auto; margin-right: auto;
+	margin-top:30px;
 	padding: 5px 30px;
     display: block;
     -moz-border-radius: 5px;
@@ -84,6 +96,7 @@ border-style: none;
  -webkit-border-radius: 5px;
  border-radius: 5px;
  border: 1px solid #ccc}
+ 
 
 .TableData{margin-left:auto;margin-right:auto;}
 
@@ -114,10 +127,10 @@ table.TableData .even {
 <body>
 <div class = "blackback">
 <div class="logout">ユーザー名 さん</div>
-<div class="logout"><a href ="">ログアウト</a></div>
+<div class="logout"><a href ="file:///C:/Users/tomohiro/Documents/github/WebProgramming/Mock/login.html">ログアウト</a></div>
 </div>
 <h1>ユーザ一覧</h1>
-<p id = "signup"><a href ="">新規登録</a></p>
+<p id = "signup">ユーザ新規登録は<a href ="file:///C:/Users/tomohiro/Documents/github/WebProgramming/Mock/signin.html">こちら</a></p>
 <form>
     <ul>
         <li class="loginid">
@@ -130,12 +143,11 @@ table.TableData .even {
         </li>
         <li class="birth">
             <label for="birth">生年月日</label>
-            <input id="birth" type="text" name="birth" placeholder="年/月/日" size="17">～<input id="birth" type="text" name="birth" placeholder="年/月/日" size="17"></textarea>
-        </li>
-        <li><input id="retrieval" type="submit" name="retrieval" value="検索">
+            <input id="birth" type="date" name="birth" size="15">～<input id="birth" type="date" name="birth" size="15"></textarea>
         </li>
     </ul>
 </form>
+ <input id="retrieval" type="button" name="retrieval" onclick="location.href='file:///C:/Users/tomohiro/Documents/github/WebProgramming/Mock/userlist.html'"value="検索">
 <br>
 <hr  color=#dcdcdc >
 <br>
@@ -153,25 +165,25 @@ table.TableData .even {
 		<td>id0001</td>
 		<td>田中太郎</td>
 		<td>1989年04月26日</td>
-		<td><input type="submit" class = moredetail value="詳細" style="WIDTH: 60px; HEIGHT: 25px"> 　
-    	<input type="submit" class = update value="更新" style="WIDTH: 60px; HEIGHT: 25px">　
-    	<input type="submit" class = deleate value="削除" style="WIDTH: 60px; HEIGHT: 25px">　</td>
+		<td><input type="button" class = moredetail onclick="location.href='file:///C:/Users/tomohiro/Documents/github/WebProgramming/Mock/moredetail.html'" value="詳細" style="WIDTH: 60px; HEIGHT: 25px"> 　
+    	<input type="button" class = update onclick="location.href='file:///C:/Users/tomohiro/Documents/github/WebProgramming/Mock/update.html'"value="更新" style="WIDTH: 60px; HEIGHT: 25px">　
+    	<input type="button" class = deleate onclick="location.href='file:///C:/Users/tomohiro/Documents/github/WebProgramming/Mock/delete.html'"value="削除" style="WIDTH: 60px; HEIGHT: 25px">　</td>
 	</tr>
 	<tr>
 		<td class="even">id0002</td>
 		<td class="even">佐藤二朗</td>
 		<td class="even">2001年11月12日</td>
-		<td class="even"><input type="submit" class = moredetail value="詳細" style="WIDTH: 60px; HEIGHT: 25px"> 　
-    	<input type="submit" class = update value="更新" style="WIDTH: 60px; HEIGHT: 25px">　
-    	<input type="submit" class = deleate value="削除" style="WIDTH: 60px; HEIGHT: 25px"></td>
+		<td class="even"><input type="button" class = moredetail onclick="location.href='file:///C:/Users/tomohiro/Documents/github/WebProgramming/Mock/moredetail.html'" value="詳細" style="WIDTH: 60px; HEIGHT: 25px"> 　
+    	<input type="button" class = update onclick="location.href='file:///C:/Users/tomohiro/Documents/github/WebProgramming/Mock/update.html'" value="更新" style="WIDTH: 60px; HEIGHT: 25px">　
+    	<input type="button" class = deleate onclick="location.href='file:///C:/Users/tomohiro/Documents/github/WebProgramming/Mock/delete.html'" value="削除" style="WIDTH: 60px; HEIGHT: 25px"></td>
 	</tr>
 	<tr>
 		<td>id0003</td>
 		<td>佐川真司</td>
 		<td>2000年01月01日</td>
-		<td><input type="submit" class = moredetail value="詳細" style="WIDTH: 60px; HEIGHT: 25px"> 　
-    	<input type="submit" class = update value="更新" style="WIDTH: 60px; HEIGHT: 25px">　
-    	<input type="submit" class = deleate value="削除" style="WIDTH: 60px; HEIGHT: 25px"></td>
+		<td><input type="button" class = moredetail onclick="location.href='file:///C:/Users/tomohiro/Documents/github/WebProgramming/Mock/moredetail.html'"value="詳細" style="WIDTH: 60px; HEIGHT: 25px"> 　
+    	<input type="button" class = update onclick="location.href='file:///C:/Users/tomohiro/Documents/github/WebProgramming/Mock/update.html'"value="更新" style="WIDTH: 60px; HEIGHT: 25px">　
+    	<input type="button" class = deleate onclick="location.href='file:///C:/Users/tomohiro/Documents/github/WebProgramming/Mock/delete.html'"value="削除" style="WIDTH: 60px; HEIGHT: 25px"></td>
 	</tr>
 	</tbody>
 </table>
